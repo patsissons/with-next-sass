@@ -1,0 +1,10 @@
+# To learn more about this file, please see https://www.gitpod.io/docs/references/gitpod-yml
+tasks:
+  - init: |
+      yarn
+    command: |
+      yarn dev
+
+github:
+  prebuilds:
+    addCheck: false

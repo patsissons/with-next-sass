@@ -1,0 +1,16 @@
+{
+  "css.lint.unknownAtRules": "ignore",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true,
+    "source.fixAll.eslint": true
+  },
+  "files.associations": {
+    "*.css": "scss"
+  },
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": ["css", "scss", "postcss"],
+  "tailwindCSS.experimental.classRegex": ["[a-zA-Z]+Class=\"([^\"]+)\""],
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

@@ -1,16 +1,21 @@
 {
   "private": true,
+  "engines": {
+    "pnpm": "^10",
+    "node": "^22"
+  },
+  "packageManager": "pnpm@10.14.0",
   "scripts": {
     "gen:css-types": "tcm -p 'src/**/*.module.{css,scss}'",
     "prettier": "prettier --plugin-search-dir . --ignore-path .prettierignore",
-    "prettier:format": "yarn prettier --write .",
+    "prettier:format": "pnpm prettier --write .",
     "dev": "next",
     "build": "next build",
     "lint:css-types": "tcm -l -p 'src/**/*.module.{css,scss}'",
-    "lint:prettier": "yarn prettier --check .",
+    "lint:prettier": "pnpm prettier --check .",
     "lint:style": "stylelint 'src/**/*.{css,scss}'",
     "lint:next": "next lint",
-    "lint": "yarn lint:css-types && yarn lint:prettier && yarn lint:style && yarn lint:next",
+    "lint": "pnpm lint:css-types && pnpm lint:prettier && pnpm lint:style && pnpm lint:next",
     "start": "next start"
   },
   "dependencies": {

@@ -1,9 +1,9 @@
 # To learn more about this file, please see https://www.gitpod.io/docs/references/gitpod-yml
 tasks:
   - init: |
-      yarn
+      pnpm install
     command: |
-      yarn dev
+      pnpm dev
 
 github:
   prebuilds:
